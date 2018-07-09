@@ -96,21 +96,6 @@ public class MyCollection implements DynamicArray{
 		}
 		return numArray;
 	}
-	public String toString( ) {
-		String s="{";
-		if(indexTillWhichElementIsPresentInArray!=0) {
-			for(int i=0;i<indexTillWhichElementIsPresentInArray-1;i++) {
-				s=s+numArray[i]+",";
-			}
-			System.out.println(numArray.toString());
-			
-			s=s+numArray[indexTillWhichElementIsPresentInArray-1]+"}";
-			//System.out.println(s);
-		}
-		if(indexTillWhichElementIsPresentInArray==0) {
-			return "{}";
-		}
-		return s;
-	}
+	
 
 }
